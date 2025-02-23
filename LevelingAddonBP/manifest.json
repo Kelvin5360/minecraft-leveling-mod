@@ -1,5 +1,12 @@
 {
     "format_version": 2,
+    "header": {
+        "description": "Leveling System Behavior Pack",
+        "name": "LevelingAddonBP",
+        "uuid": "123e4567-e89b-12d3-a456-426614174000",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 19, 0]
+    },
     "modules": [
         {
             "description": "Leveling System Behavior Pack",
