@@ -12,14 +12,14 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Create ZIP Package
+      - name: Create .mcaddon Package
         run: |
           mkdir -p build
-          zip -r build/LevelingAddonBP.zip LevelingAddonBP
+          zip -r build/LevelingAddonBP.mcaddon LevelingAddonBP
 
       - name: Upload Release Asset
         uses: softprops/action-gh-release@v1
         with:
-          files: build/LevelingAddonBP.zip
+          files: build/LevelingAddonBP.mcaddon
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
