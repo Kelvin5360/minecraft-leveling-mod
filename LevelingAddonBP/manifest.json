@@ -16,10 +16,6 @@
         }
     ],
     "dependencies": [
-        {
-            "uuid": "6f4b6893-bf84-4d4a-92c3-abcdef654321",
-            "version": [1, 0, 0]
-        }
     ],
     "scripts": {
         "initialize": ["scripts/leveling.js"]
