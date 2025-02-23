@@ -1,0 +1,20 @@
+{
+    "format_version": 2,
+    "modules": [
+        {
+            "description": "Leveling System Behavior Pack",
+            "type": "scripting",
+            "uuid": "b34d2a6a-8c5b-4e7d-8e2b-abcdef123456",
+            "version": [1, 0, 0]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "6f4b6893-bf84-4d4a-92c3-abcdef654321",
+            "version": [1, 0, 0]
+        }
+    ],
+    "scripts": {
+        "initialize": ["scripts/leveling.js"]
+    }
+}
