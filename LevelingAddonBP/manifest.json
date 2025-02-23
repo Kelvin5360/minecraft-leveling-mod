@@ -3,7 +3,7 @@
     "modules": [
         {
             "description": "Leveling System Behavior Pack",
-            "type": "scripting",
+            "type": "data",
             "uuid": "b34d2a6a-8c5b-4e7d-8e2b-abcdef123456",
             "version": [1, 0, 0]
         }
