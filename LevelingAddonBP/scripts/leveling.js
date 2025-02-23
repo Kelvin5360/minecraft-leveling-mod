@@ -50,10 +50,11 @@ world.events.playerExperienceChanged.subscribe((event) => {
     storage.set(player.name, JSON.stringify(data)); // Save XP changes persistently
 });
 
-// Open Attribute Menu
-world.events.beforeItemUse.subscribe((event) => {
-    let player = event.source;
-    if (player && event.item.id === "minecraft:book") { // Use a book to open menu
+// Open Attribute Menu via Chat Command
+world.events.beforeChat.subscribe((event) => {
+    let player = event.sender;
+    if (event.message === "/attributes") {
+        event.cancel = true;
         openAttributeMenu(player);
     }
 });
